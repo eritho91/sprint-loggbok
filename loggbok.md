@@ -1,4 +1,4 @@
-## Sprint 2 – Frontend och mikrotjänster
+## Sprint vecka 2
 
 ### Vad jag arbetade med
 
