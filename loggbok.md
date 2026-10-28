@@ -1,15 +1,17 @@
-# sprint-loggbok
+## Sprint vecka 1
 
-## Sprint 1 - v. 38
+### Vad jag arbetade med
 
-### Vad jag arbetade med:
-Jag gjorde order service när vi gjorde grupparbetet med mikrotjänsterna. Jag lade senare till CORS-konfiguration och fick det att fungera tillsammans med frontend, där jag gjorde FE-11, en grundläggande setup för att hämta produkterna från backend och visa dem i frontend.
+Under sprinten arbetade vi med att sätta upp frontendprojektet med React, TypeScript och Node.js. Vi skapade ett gemensamt GitHub-repository och såg till att alla gruppmedlemmar kunde klona projektet via SSH och köra det lokalt.
 
-Det tog ett tag innan jag förstod hur det här konceptet fungerade, alltså att man använder sig av en separat frontend-tjänst. Mer specifikt tog det tid innan jag fick alla miljövariablerna på rätt plats i rätt service, speciellt localhost-adresserna. Det svåraste här tyckte jag var att förstå vilka services som måste vara igång och varför, speciellt samtidigt som JWT-token är implementerat, men har nu lärt mig att: 
-- Auth-server måste vara igång för att man ska kunna logga in.
-- Product-service måste ha JWT-token från auth-server för att frontend ska ha tillstånd att visa produkterna.
-- Det är väldigt viktigt att rätt localhost-adresser finns på rätt ställen.
-- Frontend får tillstånd att hämta data med mikrotjänsternas CORS-konfigurationer. 
+Vi skapade även en grundläggande mappstruktur med `components`, `pages`, `service`, `types` och `test`. React Router installerades för att kunna hantera flera sidor i applikationen utan att behöva ladda om hela sidan.
 
-## Sprint 2 - v. 39
-Den här veckan var jag scrum master, det var svårt att hålla reda på alla termer som har med agilt arbetssätt att göra men jag fokuserade på att leda gruppen och lära mig allt eftersom och förstår nu mycket mer om hur ett utvecklarteam jobbar effektivt. Vi valde fyra punkter från backloggen att klara av för den här veckans sprint, och vi hann med alla samt ett par fler uppgifter. Vad vi kunde gjort bättre var mer effektiv delegation av arbete; efter att de första målen var uppnådda så blev arbetet en aning splittrat, men vi lärde oss av det.
+Vi konfigurerade också GitHub Actions för att automatiskt bygga och testa projektet. Vi fick workflowet att köras utan fel och satte upp rulesets så att pull requests behöver granskas och godkännas innan de kan mergas till main.
+
+### Eventuella problem och hur jag löste dem
+
+Det viktigaste under den här sprinten var att förstå hur frontendprojektet skulle sättas upp och hur de olika verktygen hänger ihop. Jag fick en bättre förståelse för hur Node.js används för att köra utvecklingsverktyg och hur GitHub Actions automatiserar bygg- och testprocessen.
+
+### Samarbete och agilt arbete
+
+Vi arbetade gemensamt med att skapa projektets grundstruktur och få en fungerande utvecklingsmiljö för hela gruppen. Resultatet blev att alla kunde arbeta lokalt mot samma repository.
